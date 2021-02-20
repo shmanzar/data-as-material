@@ -1,0 +1,120 @@
+.body {
+}
+
+h1 {
+  margin: 0 0 0 10%;
+}
+
+h2 {
+  margin: 25px 0 0 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 4fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". week header"
+    "M . m-cof"
+    "t . t-cof"
+    "w . w-cof"
+    "Th . th-cof"
+    "F . f-cof"
+    "S . s-cof"
+    "Su . su-cof"
+    ". . footer";
+}
+
+.week {
+  grid-area: week;
+}
+
+.header {
+  grid-area: header;
+  font-family: Noto Sans JP, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.M {
+  grid-area: M;
+  font-family: Noto Sans JP, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: xx-large;
+  /* margin: 0%; */
+}
+
+.t {
+  grid-area: t;
+  font-family: Noto Sans JP, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.w {
+  grid-area: w;
+  font-family: Noto Sans JP, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.Th {
+  grid-area: Th;
+  font-family: Noto Sans JP, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.F {
+  grid-area: F;
+  font-family: Noto Sans JP, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.S {
+  grid-area: S;
+  font-family: Noto Sans JP, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.Su {
+  grid-area: Su;
+  font-family: Noto Sans JP, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.m-cof {
+  grid-area: m-cof;
+}
+
+.t-cof {
+  grid-area: t-cof;
+}
+
+.w-cof {
+  grid-area: w-cof;
+}
+
+.th-cof {
+  grid-area: th-cof;
+}
+
+.f-cof {
+  grid-area: f-cof;
+}
+
+.s-cof {
+  grid-area: s-cof;
+}
+
+.su-cof {
+  grid-area: su-cof;
+}
+
+.footer {
+  grid-area: footer;
+}
