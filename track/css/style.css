@@ -11,7 +11,7 @@ h2 {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 0.5fr 4fr;
+  grid-template-columns: 1fr 0.01fr 4fr;
   grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
   gap: 0px 0px;
   grid-template-areas:
@@ -26,6 +26,13 @@ h2 {
     ". . footer";
 }
 
+.img-grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr;
+  gap: 1px 5px;
+  grid-template-areas: ". .";
+}
 .week {
   grid-area: week;
 }
