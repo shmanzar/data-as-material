@@ -28,7 +28,7 @@ h2 {
 
 .img-grid-container {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(15, 1fr);
   grid-template-rows: 1fr;
   gap: 1px 5px;
   grid-template-areas: ". .";
@@ -46,51 +46,58 @@ h2 {
 
 .M {
   grid-area: M;
-  font-family: Noto Sans JP, Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: xx-large;
   /* margin: 0%; */
 }
 
 .t {
   grid-area: t;
-  font-family: Noto Sans JP, Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: xx-large;
 }
 
 .w {
   grid-area: w;
-  font-family: Noto Sans JP, Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: xx-large;
 }
 
 .Th {
   grid-area: Th;
-  font-family: Noto Sans JP, Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: xx-large;
 }
 
 .F {
   grid-area: F;
-  font-family: Noto Sans JP, Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: xx-large;
 }
 
 .S {
   grid-area: S;
-  font-family: Noto Sans JP, Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: xx-large;
 }
 
 .Su {
   grid-area: Su;
-  font-family: Noto Sans JP, Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: xx-large;
 }
 
