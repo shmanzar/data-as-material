@@ -2,7 +2,7 @@
 }
 
 h1 {
-  margin: 0 0 0 10%;
+  margin: 0;
 }
 
 h2 {
@@ -11,7 +11,7 @@ h2 {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 0.01fr 4fr;
+  grid-template-columns: 0.5fr 0.01fr 4fr;
   grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
   gap: 0px 0px;
   grid-template-areas:
@@ -50,6 +50,7 @@ h2 {
   font-weight: 700;
   font-style: normal;
   font-size: xx-large;
+  color: #7f4632;
   /* margin: 0%; */
 }
 
@@ -59,6 +60,7 @@ h2 {
   font-weight: 700;
   font-style: normal;
   font-size: xx-large;
+  color: #7f4632;
 }
 
 .w {
@@ -67,6 +69,7 @@ h2 {
   font-weight: 700;
   font-style: normal;
   font-size: xx-large;
+  color: #7f4632;
 }
 
 .Th {
@@ -75,6 +78,7 @@ h2 {
   font-weight: 700;
   font-style: normal;
   font-size: xx-large;
+  color: #7f4632;
 }
 
 .F {
@@ -83,6 +87,7 @@ h2 {
   font-weight: 700;
   font-style: normal;
   font-size: xx-large;
+  color: #7f4632;
 }
 
 .S {
@@ -91,6 +96,7 @@ h2 {
   font-weight: 700;
   font-style: normal;
   font-size: xx-large;
+  color: #7f4632;
 }
 
 .Su {
@@ -99,6 +105,7 @@ h2 {
   font-weight: 700;
   font-style: normal;
   font-size: xx-large;
+  color: #7f4632;
 }
 
 .m-cof {
