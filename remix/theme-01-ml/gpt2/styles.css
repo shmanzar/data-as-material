@@ -1,0 +1,31 @@
+body {
+  background-color: whitesmoke;
+}
+
+.container {
+  display: center;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  border: 5px solid black;
+  padding: 200px 100px;
+}
+
+.text {
+  font-size: 17px;
+}
+.title {
+    font-family: Helvetica;
+}
+
+.author {
+    font-family: Helvetica;
+}
+.test:hover {
+  font-size: 0;
+}
+
+.test:hover:before {
+  font-size: 20px;
+  content: attr(data-hover);
+}
