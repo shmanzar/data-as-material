@@ -1,6 +1,7 @@
 const text = document.getElementById("text");
-
+const indicator = document.getElementById("indicator");
 text.onmouseover = function () {
+  indicator.classList.add("indvisible")
   text.innerText =
     `is even more fun than going to San Sebastian, Irún, Hendaye, Biarritz, Bayonne
 or being sick to my stomach on the 
@@ -31,6 +32,7 @@ and my smile would come back to me again and again when we laughed
 and your smile would come back to me again`;}
 
 text.onmouseout = function () {
+indicator.classList.remove("indvisible")
   text.innerText =
     `is even more fun than going to San Sebastian, Irún, Hendaye, Biarritz, Bayonne or being sick to my stomach on the 
     Travesera de Gracia in Barcelona partly because in your orange shirt you look like a better happier St. Sebastian 

@@ -8,7 +8,7 @@ body {
   text-align: center;
   align-content: center;
   border: 5px solid black;
-  padding: 200px 100px;
+  padding: 150px 100px;
 }
 
 .text {
@@ -21,6 +21,14 @@ body {
 .author {
     font-family: Helvetica;
 }
+
+
+.indvisible  {
+    font-family: Helvetica;
+color: green;
+}
+
+
 .test:hover {
   font-size: 0;
 }
