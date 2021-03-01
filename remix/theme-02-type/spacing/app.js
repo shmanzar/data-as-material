@@ -1,17 +1,22 @@
-var seaRoseLines;
+var text_file;
 function preload() {
-  seaRoseLines = loadStrings('having-a-coke-with-you.txt');
+  text_file = loadStrings('having-a-coke-with-you.txt');
 }
 function setup() {
-  createCanvas(1420, 800);
+  createCanvas(windowWidth, windowHeight);
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function draw() {
   background(50);
   textSize(16);
   noStroke();
   textAlign(LEFT, TOP);
-  for (var i = 0; i < seaRoseLines.length; i++) {
-    var words = seaRoseLines[i].split(" ");
+  for (var i = 0; i < text_file.length; i++) {
+    var words = text_file[i].split(" ");
     var currentOffset = 0;
     for (var j = 0; j < words.length; j++) {
       var wordWidth = textWidth(words[j]);
