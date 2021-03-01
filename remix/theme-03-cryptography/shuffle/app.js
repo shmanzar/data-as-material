@@ -1,8 +1,8 @@
 onclick = function(){
-    var parent = document.getElementById("container");
-    var frag = document.createDocumentFragment();
-    while (parent.children.length) {
-        frag.appendChild(parent.children[Math.floor(Math.random() * parent.children.length)]);
+    var tag_parent = document.getElementById("container");
+    var deck = document.createDocumentFragment();
+    while (tag_parent.children.length) {
+        deck.appendChild(tag_parent.children[Math.floor(Math.random() * tag_parent.children.length)]);
     }
-    parent.appendChild(frag);
+    tag_parent.appendChild(deck);
 }
