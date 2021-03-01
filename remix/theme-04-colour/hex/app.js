@@ -1,5 +1,3 @@
-
-
 function changeColour(tagName) {
     document.querySelectorAll(tagName).forEach(el => {
         let colour = el.textContent;

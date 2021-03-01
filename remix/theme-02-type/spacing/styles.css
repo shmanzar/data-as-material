@@ -1,6 +1,5 @@
 body {
   background-color: whitesmoke;
-  font-family: Helvetica;
 }
 
 .container {
@@ -12,10 +11,13 @@ body {
   padding: 150px 100px;
 }
 
-h1 {
+.text {
+  font-size: 17px;
+}
+.title {
     font-family: Helvetica;
 }
 
-h2 {
+.author {
     font-family: Helvetica;
 }
