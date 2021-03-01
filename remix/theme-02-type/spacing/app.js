@@ -1,3 +1,5 @@
+// Total credit to Alison Parish's text and type code here https://creative-coding.decontextualize.com/text-and-type/
+
 var text_file;
 function preload() {
   text_file = loadStrings('having-a-coke-with-you.txt');

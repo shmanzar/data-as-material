@@ -1,0 +1,21 @@
+body {
+  background-color: whitesmoke;
+  font-family: Helvetica;
+}
+
+.container {
+  display: center;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  border: 5px solid black;
+  padding: 150px 100px;
+}
+
+h1 {
+    font-family: Helvetica;
+}
+
+h2 {
+    font-family: Helvetica;
+}
