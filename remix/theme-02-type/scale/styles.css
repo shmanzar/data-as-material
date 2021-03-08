@@ -1,7 +1,5 @@
 body {
   background-color: whitesmoke;
-  font-family: Helvetica;
-  color: #2a2a2a;
 }
 
 .container {
@@ -13,14 +11,13 @@ body {
   padding: 150px 100px;
 }
 
-h1 {
-  font-family: Helvetica;
+.text {
+  font-size: 17px;
+}
+.title {
+    font-family: Helvetica;
 }
 
-h2 {
-  font-family: Helvetica;
-}
-
-li {
-  margin-bottom: 1rem;
+.author {
+    font-family: Helvetica;
 }
