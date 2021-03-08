@@ -1,42 +1,23 @@
 const tay = document.getElementById("tay");
 const indicator = document.getElementById("indicator");
 const b = baffle(document.querySelector(".text"));
-let txt = `Having a Coke with You is enough to make me sick
-and I suspect this is because I look upon you with adoration;
-  Even so your sweet name makes my head spin;
-  For I, who have not put many first in mind,
-  Upon your name shall fame beauteous titles,
-  And I shall be a sole his due, able to make him live
-    If my slight ill-will with you with him lead me away
-    As I am farther from you as you from me,
-    Spend more of your wealth upon me, more than upon you,
-    Love, Fortune, or all my Others for that matter.
-  
-  Love is a fool's love, and a miser's love,
-  When in truth thou provest my wit,
-  By praising that which still doth grow?
-  Love is so preposterously false,
-  That in it the world's waste and waste's shame,
-  And in it the world's part is conceded,
-  For truth itself doth play the tyrants to his sight;
-    And that his glory doth conceal his abuses.
+let txt = `Having a Coke with You is enough
+To live for the hope of it all
+Canceling all your plans just in case you'd call
+And saying "us"
+And leaving no trace behind
 
-    At evening and day
-partly because of the cold but partly because of the promise
-of the night,
-partly because of the maiden air
-partly because of the safety of the cold,
-partly because of the peace of well being
-partly every part, every part wert thou when thou twilight
-insafes my pain,
-and looks on heaven but dims thy pain,
-and looks on me but with my pain,
-and thinks on me but poorly,
-and gives no kind of comfort to me
-except that this unfair privilege
-which so unjustly is denied
-in this age by your act of love.
-    
+partly because in your orange shirt you look like a more open-minded father
+Look at this idiotic fool that you made me
+You taught me a secret language I can't speak with anyone else
+I would rather look at you than all the portraits in the world
+And then we would be made of ashes, too
+And there would be no creek beneath me
+I would not have a garden anywhere by the lake
+
+it seems they were all iced for you
+Whispers of "Are you sure?"
+"Never have I ever before"
     `;
 
 document.querySelector("#tay").addEventListener("click", () => {
