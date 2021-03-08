@@ -1,0 +1,33 @@
+body {
+  background-color: whitesmoke;
+}
+/* .header {
+    display: center;
+  justify-content: center;
+  text-align: center;
+  align-content: center; */
+/*   border: 5px solid black; */
+/*   padding: 150px 100px;
+}} */
+.container {
+  display: center;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  border: 5px solid black;
+  padding: 110px 100px;
+}
+/* .container > h3 {
+  margin-right: 85%;
+} */
+.text {
+  font-size: 17px;
+  line-height: 120%;
+}
+.title {
+  font-family: Helvetica;
+}
+
+.author {
+  font-family: Helvetica;
+}
