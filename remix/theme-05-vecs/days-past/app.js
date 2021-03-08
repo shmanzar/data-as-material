@@ -38,7 +38,10 @@ function setup() {
 
 // replace one random word in the text
 function nextWord() {
-  let words = RiTa.tokenize(txt); // split into words
+  // let words = RiTa.tokenize(txt); // split into words
+  let doc = nlp(txt);
+  doc.verbs().toPastTense();
+  console.log(doc.text());
 
   // loop from a random spot
   let r = floor(random(0, words.length));

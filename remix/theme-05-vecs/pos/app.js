@@ -29,7 +29,7 @@ which is not going to go wasted on me which is why I’m telling you about it
 `;
 
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight).parent("#cdiv");
+  createCanvas(windowWidth, windowHeight).parent("#cdiv");
   noStroke();
   textSize(22);
   // textAlign(CENTER, CENTER);
@@ -48,37 +48,78 @@ function nextWord() {
     if (word.length < 3) continue; // len >= 3
 
     // find related words
-    let pos = RiTa.tagger.allTags(word)[0];
-    let rhymes = RiTa.rhymes(word, { pos });
-    let sounds = RiTa.soundsLike(word, { pos });
-    let spells = RiTa.spellsLike(word, { pos });
-    let similars = [...rhymes, ...sounds, ...spells];
+    // let pos = RiTa.tagger.allTags(word)[0];
+    // let rhymes = RiTa.rhymes(word, { pos });
+    // let sounds = RiTa.soundsLike(word, { pos });
+    // let spells = RiTa.spellsLike(word, { pos });
+    // let similars = [...rhymes, ...sounds, ...spells];
+    let partsofspeec = RiTa.pos(word);
 
     // only words with 2 or more similars
-    if (similars.length < 2) {
-      console.log("No substitute for " + word);
-      continue;
-    }
+    // if (similars.length < 2) {
+    //   console.log("No substitute for " + word);
+    //   continue;
+    // }
 
     // pick a random similar
-    let next = RiTa.random(similars);
-
-    if (next.includes(word) || word.includes(next)) {
+    // let next = RiTa.random(similars);
+    penn_tags = [
+      "cc",
+      "cd",
+      "dt",
+      "ex",
+      "fw",
+      "in",
+      "jj",
+      "jjr",
+      "jjs",
+      "ls",
+      "md",
+      "nn",
+      "nns",
+      "nnp",
+      "nnps",
+      "pdt",
+      "pos",
+      "prp",
+      "prp$",
+      "rb",
+      "rbr",
+      "rbs",
+      "rp",
+      "sym",
+      "to",
+      "uh",
+      "vb",
+      "vbd",
+      "vbg",
+      "vbn",
+      "vbp",
+      "vbz",
+      "wdt",
+      "wp",
+      "wp$",
+      "wrb",
+    ];
+    if (partsofspeec.includes(word) || word.includes(partsofspeec)) {
       continue; // skip substrings
     }
-    if (/[A-Z]/.test(words[idx][0])) {
-      next = RiTa.capitalize(next); // keep capitals
+    if (word.includes(penn_tags) || penn_tags.includes(word)) {
+      continue;
     }
+    // if (/[A-Z]/.test(words[idx][0])) {
+    //   partsofspeec = RiTa.capitalize(partsofspeec); // keep capitals
+    // }
 
-    console.log("replace(" + idx + "): " + word + " -> " + next);
+    console.log("replace(" + idx + "): " + word + " -> " + partsofspeec);
 
-    words[idx] = next; // do replacement
+    words[idx] = partsofspeec; // do replacement
     var changes = document.getElementById("change");
 
     changes.textContent = word;
     var og_text = document.getElementById("word");
 
-    og_text.textContent = next;
+    og_text.textContent = partsofspeec;
 
     break;
   }
@@ -91,5 +132,9 @@ function nextWord() {
   text("by Frank O'Hara", 630, 150, 1000, height);
   text(txt, 300, 250, 900, height);
 
-  setTimeout(nextWord, 1500);
+  setTimeout(nextWord, 100);
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
