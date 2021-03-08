@@ -1,5 +1,5 @@
 body {
-  background-color: whitesmoke;
+  background-color: black;
 }
 
 .container {
@@ -15,9 +15,14 @@ body {
   font-size: 17px;
 }
 .title {
-    font-family: Helvetica;
+  font-family: Helvetica;
 }
 
 .author {
-    font-family: Helvetica;
+  font-family: Helvetica;
+}
+.ascii-art {
+  font-family: monospace;
+  white-space: pre;
+  color:greenyellow
 }
